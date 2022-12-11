@@ -1,4 +1,4 @@
-//punto B
+//punto B el parametro 0.18 es mi caso particulra debes de sacar tu tiempo de la manera requerida
 g=(2*s+4)/( (s^2+5*s+6)*(s+4) )
 gd=convert(g,8,0.18)
 fd=gd|1
@@ -26,7 +26,7 @@ gk
 rootlocus(gk)
 
 
-//punto f 
+//punto f debes de buscar tus propios parametros para l;las k, esto esta solo para mi caso particular
 //(-3.5<kp<41)
 //aprox k1=-3.5
 //aprox k2=41.4
@@ -39,18 +39,9 @@ fk1=gk1|1
 fk2=gk2|1
 rootlocus(fk1,fk2)
 
-kq1=0.1
-kq2=41.35
-gkq1=kq1*gd
-gkq2=kq2*gd
-fkq1=gkq1|1
-fkq2=gkq2|1
-rootlocus(fkq1,fkq2)
 
-time(fk1,fk2)
-time(fkq1,fkq2)
 
-//punto g
+//punto g busca tus valores dependidndo de tu rango en kp
 //1
 gd
 ki1=38.3623
@@ -132,7 +123,7 @@ fpi2=kpi2|1
 time(fd,fpi1,fpi2)
 
 
-//punto h
+//punto h determina tus valores
 gd
 kp=1.6925
 ki=3.3055
